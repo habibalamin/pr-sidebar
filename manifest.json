@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "GH Pull Requests on Sidebar",
+  "short_name": "PR Sidebar",
+  "description": "Shows linked pull requests on the sidebar of GitHub issue pages",
+  "author": "Habib Alamin",
+  "version": "0.1",
+
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.github.com/*/issues/*",
+        "https://*.github.com/*/issues/*"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
