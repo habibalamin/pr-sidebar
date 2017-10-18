@@ -17,7 +17,8 @@
         "http://*.github.com/*/issues/*",
         "https://*.github.com/*/issues/*"
       ],
-      "js": ["main.js"]
+      "js": ["main.js"],
+      "css": ["main.css"]
     }
   ]
 }

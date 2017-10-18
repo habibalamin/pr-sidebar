@@ -12,7 +12,7 @@ for (var i = prs.length - 1; i >= 0; i--) {
   var stateIcon = state.querySelector('svg').outerHTML;
   var stateName = state.textContent.trim();
   var stateColor = getComputedStyle(state).backgroundColor;
-  prList.push('<li style="margin-bottom: 6px;"><a class="reason text-small text-muted" href="' + aHref + '">' + aText + '</a><span class="pr-state right" style="color: ' + stateColor + '">' + stateIcon + '</span></li>');
+  prList.push('<li style="margin-bottom: 6px;"><a class="reason text-small text-muted" href="' + aHref + '">' + aText + '</a><span class="pr-state" style="color: ' + stateColor + '">' + stateIcon + '</span></li>');
 }
 
 var prOrderedList = document.createElement('ol');
