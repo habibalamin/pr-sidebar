@@ -5,7 +5,7 @@
   "short_name": "PR Sidebar",
   "description": "Shows linked pull requests on the sidebar of GitHub issue pages",
   "author": "Habib Alamin",
-  "version": "0.2",
+  "version": "0.3",
 
   "icons": {
     "128": "icon.png"
