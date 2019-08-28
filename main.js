@@ -4,10 +4,10 @@ var labels = document.querySelector('.sidebar-labels');
 var prList = [];
 
 for (var i = prs.length - 1; i >= 0; i--) {
-  var anchor = prs[i].parentElement.querySelector('.discussion-item-ref-title a');
+  var anchor= prs[i].innerHTML;
   var state = prs[i].parentElement.querySelector('.State');
 
-  var aText = anchor.text.replace(/[\s]+/mg, ' ').replace(/^ | $/g, '');
+  var aText = anchor.replace(/[\s]+/mg, ' ').replace(/^ | $/g, '').replace('f4', '');
   var aHref = anchor.href;
   var stateIcon = state.querySelector('svg').outerHTML;
   var stateName = state.textContent.trim();
